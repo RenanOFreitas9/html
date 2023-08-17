@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+#cabecalho {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    
+    background-image: linear-gradient(to bottom, #3AD07D,#1A5C38);
+    color: white;
+    margin: -20px -10px 0px -10px;
+}
+
+body {
+    background-color: #84E1AD;
+    padding: 0px;
+}
+
+#secao {
+    background-color: white;
+    text-align: justify;
+    margin: 0px 40px;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 10px 10px ;
+    box-shadow: 2px 2px 2px black;
+}
+
+#titulo1 {
+    color: #145f36;
+}
+ 
+.titulos {
+    color: #0e4627;
+    background-color: #baeed0;
+}
+
+
+#extra{
+    background-color: #2FA866;
+    color: white;
+    padding: 2px;
+    
+}
+#aside {
+    box-shadow: 1px 1px 3px black;
+    border-radius: 10px 10px;
+    background-color: #93C0A6;
+    padding: 0px 7px 5px 7px;
+}
+
+
+#links {
+    text-align: left;
+    padding: 0px 0px 5px 15px;
+}
+
+#link:visited {
+    color: white;
+}
+#video{
+    margin: auto;
+}
+
+footer{
+    background-color: #0e4627;
+    color: white;
+    margin: -13px -7px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+
+}
