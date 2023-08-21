@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+            
+        }
+        .num{
+            text-align: right;
+            
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(156, 155, 155, 0.74);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH   
+            TFOOT
+                TD, TD, TH     
+    -->
+
+    <table>
+        <caption>
+            População das UF
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.136.417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.443.208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.880.506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.791.688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.116.132</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.055.228</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.152</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3.974.495</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.974.175</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.833.486</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.658.813</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.168.027</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
