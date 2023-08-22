@@ -10,7 +10,7 @@
         }
         table{
             width: 400px;
-            border-collapse: collapse;
+            border-collapse: relative;
         }
         caption{
             font-size: 1.3em;
@@ -23,6 +23,11 @@
             background-color: gray;
             color: white;
             
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: black;
         }
         .num{
             text-align: right;
