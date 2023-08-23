@@ -6,7 +6,7 @@
 }
 body{
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
     background: url(imagens/fundo-madeira.jpg) no-repeat top center ;
     background-size: cover;
     background-attachment: fixed;
@@ -25,4 +25,23 @@ main{
     top: 50%;
     transform: translate(-50%, -50%);
     
+}
+#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+#apps img{
+    width: 50px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+    border-radius: 50%;
+}
+#apps img:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid white;
+    transition: transform 0.5s;
 }
