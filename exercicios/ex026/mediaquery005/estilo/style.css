@@ -63,10 +63,15 @@ article > p{
     display: block;
     text-align: center;
     padding: 10px;
+    width: 20vw;
+    margin: auto;
 }
 #me:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+    transition: 0.7s;
+    box-shadow: 1px 1px 5px black;
+    width: 35vw;
 }
 
 @media screen and (min-width:600px) {
