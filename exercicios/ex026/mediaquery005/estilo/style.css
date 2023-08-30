@@ -41,6 +41,8 @@ menu > ul > li > a{
 }
 menu > ul > li > a:hover{
     background-color: lightgray;
+    transition: 0.5s;
+    color: black;
 }
 main{
     background-color: white;
@@ -74,11 +76,3 @@ article > p{
     width: 35vw;
 }
 
-@media screen and (min-width:600px) {
-    #me{
-        display: none;
-    }
-    menu{
-        display: block;
-    }
-}
