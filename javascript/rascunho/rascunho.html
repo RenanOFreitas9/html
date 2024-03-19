@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        #peso, #alt, #btn{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <form action="">
+        <label for="peso">Digite seu peso: </label>
+        <input type="text" name="peso" id="peso"> <br>
+        <label for="alt">Digite sua altura: </label>
+        <input type="text" name="alt" id="alt"> <br>
+        <input type="button" value="Calcular" id="btn" onclick="calcular()">
+    </form>
+    <div id="imc">
+        Seu IMC
+    </div>
+    <script src="rascunho.js"></script>
+</body>
+</html>
