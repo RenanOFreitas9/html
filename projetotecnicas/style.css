@@ -27,6 +27,7 @@ body{
 
 header{
     padding: 40px 4%;
+    
 }
 
 .btncontato{
@@ -79,6 +80,9 @@ header .btncontato button:hover{
 .topo{
     padding: 40px 4%; 
     background-color: rgb(21, 29, 21);
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
 }
 main a{
     text-decoration: none;
@@ -100,14 +104,14 @@ section{
     font-size: 45px;
 }
 .topo p{
-    color: white;
+    color: rgba(255, 255, 255, 0.692);
 }
 .topo h1 p{
     box-shadow: 5px 2px 2px rgb(255, 255, 255);
 }
 
 .topo img:hover{
-    transform: scale(1.05);
+    transform: scale(1.15);
     transition: .2s;
 }
 
@@ -118,10 +122,18 @@ section{
     text-align: justify;
     font-size: 22px;
     letter-spacing: 6px;
+    
 }
 .artigo p {
     margin-top: 20px;
 }
 .artigo img{
     margin: 0px 340px;
+}
+
+
+footer{
+    background-color: rgb(1, 22, 1);
+    color: rgba(255, 255, 255, 0.473);
+    margin-top: 20px;
 }
