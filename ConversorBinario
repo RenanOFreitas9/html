@@ -1,0 +1,53 @@
+package com.example.conversor;
+
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+
+        EditText editTextNum = findViewById(R.id.editTextNum);
+        Button btnConverter = findViewById(R.id.btnConverter);
+        TextView textViewResultado = findViewById(R.id.textViewResultado);
+
+        btnConverter.setOnClickListener(view -> {
+            String bin = editTextNum.getText().toString();
+            int decimal = 0;
+            int comprimento = bin.length();
+
+            for (int i =0; i < comprimento; i++){
+                char digito = bin.charAt(comprimento - 1 - i);
+
+                if(digito == '1'){
+                    decimal += potencia(2, i);
+                } else if (digito != '0') {
+                    Toast.makeText(this, "Número binário inválido", Toast.LENGTH_LONG).show();
+                    return;
+                }
+            }
+            textViewResultado.setText("Resultado em decimal: " + decimal);
+        });
+
+    }
+    private int potencia(int base, int expoente){
+        int resultado = 1;
+        for (int i = 0; i < expoente; i++){
+            resultado *= base;
+        }
+        return resultado;
+    }
+
+}
